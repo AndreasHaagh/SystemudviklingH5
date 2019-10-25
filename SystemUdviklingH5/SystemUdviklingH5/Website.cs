@@ -2,7 +2,7 @@
 
 namespace SystemUdviklingH5
 {
-    class Program
+    class Website
     {
         static void Main(string[] args)
         {
