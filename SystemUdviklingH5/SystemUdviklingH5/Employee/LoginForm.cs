@@ -38,8 +38,16 @@ namespace SystemUdviklingH5.Employee
         {
             Console.WriteLine("Please, enter ur loginname: ");
             string loginname = Console.ReadLine();
-            Console.WriteLine("Congratulations, you did reset ur password!");
-            Console.WriteLine("ur new password is: Password1");
+            if (this.employeeId == loginname)
+            {
+                Console.WriteLine("Congratulations, you did reset ur password!");
+                Console.WriteLine("You can try to logge ind again - your new password is: Password1");
+
+            } else
+            {
+                Console.WriteLine("Oops, are you sure you trying login in in right place?");               
+            }
+           
         }
 
 
