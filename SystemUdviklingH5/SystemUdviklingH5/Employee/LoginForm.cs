@@ -15,14 +15,31 @@ namespace SystemUdviklingH5.Employee
             this.password = "Password1";
         }
 
-        public void Login(string employeeId, string password)
+        public void Login()
         {
-
+            Console.WriteLine("Please, enter ur loginname: ");
+            string employeeId = Console.ReadLine();
+            Console.WriteLine("Please, enter ur password: ");
+            string password = Console.ReadLine();
+            if (this.employeeId == employeeId && this.password == password)
+            {
+                Console.WriteLine("Tillykke, du har logget ind!");
+            }
+            else
+            {
+                Console.WriteLine("Either ur login or password are wrong!");
+                Console.WriteLine("please reset ur password:");
+                DisplayResetPasswordForm();
+            }
+            
         }
 
-        public void DisplayResetPasswordForm(string password)
+        public void DisplayResetPasswordForm()
         {
-
+            Console.WriteLine("Please, enter ur loginname: ");
+            string loginname = Console.ReadLine();
+            Console.WriteLine("Congratulations, you did reset ur password!");
+            Console.WriteLine("ur new password is: Password1");
         }
 
 
