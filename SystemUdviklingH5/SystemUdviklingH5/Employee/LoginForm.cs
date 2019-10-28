@@ -24,6 +24,7 @@ namespace SystemUdviklingH5.Employee
             if (this.employeeId == employeeId && this.password == password)
             {
                 Console.WriteLine("Tillykke, du har logget ind!");
+                //DisplayOrderList();
             }
             else
             {
@@ -38,15 +39,8 @@ namespace SystemUdviklingH5.Employee
         {
             Console.WriteLine("Please, enter ur loginname: ");
             string loginname = Console.ReadLine();
-            if (this.employeeId == loginname)
-            {
-                Console.WriteLine("Congratulations, you did reset ur password!");
-                Console.WriteLine("You can try to logge ind again - your new password is: Password1");
-
-            } else
-            {
-                Console.WriteLine("Oops, are you sure you trying login in in right place?");               
-            }
+            var reset = new ResetPasswordForm();
+            reset.ResetPassword(loginname);
            
         }
 
