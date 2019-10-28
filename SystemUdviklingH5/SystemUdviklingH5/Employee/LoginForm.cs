@@ -24,7 +24,9 @@ namespace SystemUdviklingH5.Employee
             if (this.employeeId == employeeId && this.password == password)
             {
                 Console.WriteLine("Tillykke, du har logget ind!");
-                //DisplayOrderList();
+                var orderList = new OrderList();
+                orderList.DisplayOrderList();
+                   
             }
             else
             {

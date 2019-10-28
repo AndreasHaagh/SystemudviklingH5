@@ -41,33 +41,38 @@ namespace SystemUdviklingH5.Customer
             Console.Clear();
             GetProductData();
 
-            Console.WriteLine("Choose product");
-            foreach (var item in products)
+            Console.WriteLine("Products we have in our shop: ");
+           
+            for (int i = 0; i < products.Count; i++)
             {
-                Console.WriteLine(item.name);
+                Console.WriteLine((i+1) +" " +products[i].name);
             }
+
             while (choosingProducts)
             {
+                Console.WriteLine(" 4.Shopping cart");
+                Console.Write("Enter number of choice:");
                 userInput();
             }
+
         }
 
         private void userInput()
         {
-            var input = Console.ReadLine();
+            var input = Convert.ToInt32(Console.ReadLine());
 
-            switch (input.ToLower())
+            switch (input)
             {
-                case "add rundstyk":
+                case 1:
                     AddProduct(0);
                     break;
-                case "add lagkage":
+                case 2:
                     AddProduct(1);
                     break;
-                case "add rygbrod":
+                case 3:
                     AddProduct(2);
                     break;
-                case "show customerform":
+                case 4:
                     DisplayCustomerForm();
                     break;
                 default:

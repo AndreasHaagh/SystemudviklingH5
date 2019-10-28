@@ -6,5 +6,10 @@ namespace SystemUdviklingH5.Employee
 {
     class OrderList
     {
+
+        public void DisplayOrderList()
+        {
+            Console.WriteLine("Here are the list of orders: ");
+        }
     }
 }

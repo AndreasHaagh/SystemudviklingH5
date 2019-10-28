@@ -57,15 +57,14 @@ namespace SystemUdviklingH5
 
         private static void DisplayProductCataloge()
         {
-            Console.WriteLine("Hello productCataloge");
-            Console.ReadKey();
+            Console.WriteLine("Hello Customer");            
             var productCataloge = new ProductCataloge();
             productCataloge.ShowProductCataloge();
         }
 
         public static void DisplayLoginForm()
         {
-            Console.WriteLine("Hello login");
+            Console.WriteLine("Hello, please log in!");
             var login = new LoginForm();
             login.Login();
            
