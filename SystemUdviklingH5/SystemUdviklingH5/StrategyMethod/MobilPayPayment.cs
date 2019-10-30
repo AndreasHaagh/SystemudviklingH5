@@ -10,7 +10,17 @@ namespace SystemUdviklingH5.StrategyMethod
         public void Pay()
         {
             Console.WriteLine("Please pay to this phone number: + 45 88 88 88 88");
-            Console.WriteLine("Thank you for your order!");           
+            Console.WriteLine("Please, enter confirmation code that you received: ");
+            string confirmationCode = Console.ReadLine();
+
+            while(confirmationCode.Length != 4 )
+            {
+                Console.WriteLine("Please, enter correct confirmation code: ");
+                confirmationCode = Console.ReadLine();
+            }             
+             Console.WriteLine("Thank you for your order!");   
+            
+                    
            
         }
     }
