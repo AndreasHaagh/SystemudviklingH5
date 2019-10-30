@@ -9,7 +9,9 @@ namespace SystemUdviklingH5.StrategyMethod
     {
         public void Pay()
         {
-            Console.WriteLine("Please pay to this phone number 88 88 88 88");
+            Console.WriteLine("Please pay to this phone number: + 45 88 88 88 88");
+            Console.WriteLine("Thank you for your order!");           
+           
         }
     }
 }

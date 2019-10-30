@@ -12,6 +12,7 @@ namespace SystemUdviklingH5.Customer
 
         private void AddProduct(int id)
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("adds product with id {0}", id);
             foreach (var item in products)
             {
@@ -50,6 +51,7 @@ namespace SystemUdviklingH5.Customer
 
             while (choosingProducts)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(" 4.Shopping cart");
                 Console.Write("Enter number of choice:");
                 userInput();

@@ -22,7 +22,7 @@ namespace SystemUdviklingH5.Customer
             {
                 Console.WriteLine(item.name);
             }
-            Console.WriteLine("For at betale skrive confirm");
+            Console.WriteLine("For at betale skriv: confirm");
             var input = Console.ReadLine();
             if (input.ToLower() == "confirm")
             {
@@ -32,6 +32,7 @@ namespace SystemUdviklingH5.Customer
 
         public static void ConfirmOrder(List<Product> products)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Vælg en betailgns metode 1. Credit Card 2. MobilPay");
             var input = Console.ReadLine();
             switch (input.ToLower())
