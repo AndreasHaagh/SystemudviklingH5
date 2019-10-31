@@ -15,7 +15,7 @@ namespace SystemUdviklingH5.Customer
             this.paymentStrategy = paymentStrategy;
         }
 
-        public void betal()
+        public void Betal()
         {
             paymentStrategy.Pay();
         }

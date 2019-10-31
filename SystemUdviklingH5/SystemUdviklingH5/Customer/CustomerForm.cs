@@ -38,10 +38,10 @@ namespace SystemUdviklingH5.Customer
             switch (input.ToLower())
             {
                 case "1":
-                    creditCard.betal();
+                    creditCard.Betal();
                     break;
                 case "2":
-                    mobilPay.betal();
+                    mobilPay.Betal();
                     break;
             }
         }
