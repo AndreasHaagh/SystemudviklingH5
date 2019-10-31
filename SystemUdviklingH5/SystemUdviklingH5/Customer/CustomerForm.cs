@@ -2,6 +2,7 @@
 using SystemUdviklingH5.Models;
 using SystemUdviklingH5.Interface;
 using SystemUdviklingH5.StrategyMethod;
+using SystemUdviklingH5.Employee;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,6 +11,7 @@ namespace SystemUdviklingH5.Customer
     class CustomerForm
     {
         public static List<Product> choosenProducts = new List<Product>();
+        static int orderId = 1;
 
         private static PaymentMethod creditCard = new PaymentMethod(new CreditCardPayment());
         private static PaymentMethod mobilPay = new PaymentMethod(new MobilPayPayment());
@@ -44,6 +46,13 @@ namespace SystemUdviklingH5.Customer
                     mobilPay.Betal();
                     break;
             }
+            AddToOrderList(new Order(orderId, products));
+        }
+
+        private static void AddToOrderList(Order order)
+        {
+            OrderList.orders.Add(order);
+            orderId++;
         }
     }
 }
