@@ -26,7 +26,7 @@ namespace SystemUdviklingH5.Customer
         private void DisplayCustomerForm()
         {
             choosingProducts = false;
-            CustomerForm.showCustomerForm();
+            CustomerForm.ShowCustomerForm();
         }
 
         private void GetProductData()
@@ -54,12 +54,12 @@ namespace SystemUdviklingH5.Customer
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(" 4.Shopping cart");
                 Console.Write("Enter number of choice:");
-                userInput();
+                UserInput();
             }
 
         }
 
-        private void userInput()
+        private void UserInput()
         {
             var input = Convert.ToInt32(Console.ReadLine());
 

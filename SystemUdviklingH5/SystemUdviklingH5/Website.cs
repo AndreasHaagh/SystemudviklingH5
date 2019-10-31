@@ -8,7 +8,6 @@ namespace SystemUdviklingH5
     {
         static void Main(string[] args)
         {
-            Console.Clear();
             bool alive = true;
 
             while (alive)

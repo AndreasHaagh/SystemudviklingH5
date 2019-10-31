@@ -14,7 +14,7 @@ namespace SystemUdviklingH5.Customer
         private static PaymentMethod creditCard = new PaymentMethod(new CreditCardPayment());
         private static PaymentMethod mobilPay = new PaymentMethod(new MobilPayPayment());
 
-        public static void showCustomerForm()
+        public static void ShowCustomerForm()
         {
             Console.Clear();
             Console.WriteLine("Dine udvalgte vare");
